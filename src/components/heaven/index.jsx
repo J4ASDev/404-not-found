@@ -7,8 +7,7 @@ class upperLevel extends Component {
       <div>
 
         upperLevel
-        <i class="fas fa-angle-up"></i>
-        <i class="fas fa-angle-down"></i>
+        <i className="fas fa-angle-down"></i>
         <Shift url="/"> GO BACK TO THE LAND </Shift>
       </div>
     )

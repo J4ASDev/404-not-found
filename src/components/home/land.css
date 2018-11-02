@@ -1,0 +1,126 @@
+.land-container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 15% 70% 15%;
+}
+
+.land-body-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+  background: url("../../images/land.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+
+}
+
+.land-body-polygon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, .8);
+  -webkit-clip-path: polygon(0 0, 77% 0, 50% 100%, 0% 100%);
+  clip-path: polygon(0 0, 77% 0, 50% 100%, 0% 100%);
+}
+  
+.land-header a {
+  color: white;
+  font-size: 20px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 200;
+  display: grid;
+  text-align: center;
+  text-decoration: none;
+}
+
+.land-header p {
+  margin: 0;
+}
+
+.land-body {
+  width: 50%;
+  display: grid;
+  grid-template-rows: 40% 40% 20%;
+  margin: 0 5%;
+}
+
+.land-body figure {
+  margin: 0;
+}
+
+.land-body img {
+  width: 180px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.58);
+}
+
+.land-body-404 {
+  color: white;
+}
+
+.land-body-title {
+  font-size: 80px;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+.land-body-title span {
+  color: #01c8ab;
+}
+
+.land-body-halfTitle {
+  font-size: 30px;
+  font-family: 'Barlow', sans-serif;
+  margin: 0;
+}
+
+.land-body-buttons {
+  height: 50px;
+  display: grid;
+  justify-items: start;
+  grid-template-columns: 30% 70%;
+}
+
+.land-body-buttons button {
+  color: white;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+.land-body-back{
+  width: 90%;
+  border: 2px solid white;
+  background: transparent;
+  outline-color: #01c8ab;
+}
+
+.land-body-report {
+  width: 240px;
+  background: #01c8ab;
+  border: none;
+  outline-color: white;
+}
+
+.land-footer {
+  display: grid;
+  align-items: end;
+}
+
+.land-footer a {
+  color: white;
+  font-size: 20px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 200;
+  display: grid;
+  text-align: center;
+  text-decoration: none;
+}
+
+.land-footer p {
+  margin: 0;
+}
