@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import Shift from "../shift"
+import { Shift } from "../Switch"
 import Profile from "../../images/profile.jpg"
+import { Link } from 'react-router-dom'
 
 import './land.css'
 
@@ -10,12 +11,10 @@ class home extends Component {
       <div className="land-container">
         <div className="land-body-background"></div>
         <div className="land-body-polygon"></div>
-        <div className="land-header">
-          <Shift url="/heaven"> 
-            <i className="fas fa-angle-up"></i>
-            <p> GO TO HEAVEN </p> 
-          </Shift>
-        </div>
+        <Shift url="/heaven"> 
+          <i className="fas fa-angle-up"></i>
+          <p> GO TO HEAVEN </p> 
+        </Shift>
         <section className="land-body">
           <figure className="land-body-profile">
             <img src={Profile}  alt="profile"/>
@@ -26,16 +25,14 @@ class home extends Component {
             <h3 className="land-body-halfTitle">Do not worry... it happens to the best of us.</h3>
           </div>
           <div className="land-body-buttons">
-            <button className="land-body-back">TAKE ME HOME</button>
+            <Link to="/" className="land-body-back">TAKE ME HOME</Link>
             <button className="land-body-report">REPORT PROBLEM</button>
           </div>
         </section>
-        <div className="land-footer">
-          <Shift url="/underground"> 
-            <p> GO TO UNDERGROUND </p>
-            <i className="fas fa-angle-down"></i>
-          </Shift>
-        </div>
+        <Shift url="/underground"> 
+          <p> GO TO UNDERGROUND </p>
+          <i className="fas fa-angle-down"></i>
+        </Shift>
       </div>
     )
   }

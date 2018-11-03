@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Shift from '../shift'
+import { Shift } from '../Switch'
 
 import './underground.css'
 
@@ -7,12 +7,11 @@ class Underground extends Component {
   render () {
     return (
       <div className="container-underground">
-        <div className="underground-header">
-          <Shift url="/">
-            <i className="fas fa-angle-up"></i>
-            <p>GO BACK TO THE LAND</p>
-          </Shift>
-        </div>
+      <div className="underground-background"></div>
+        <Shift url="/">
+          <i className="fas fa-angle-up"></i>
+          <p>GO BACK TO THE LAND</p>
+        </Shift>
 
         <section className="underground-body-outside">
           <div className="underground-body">
